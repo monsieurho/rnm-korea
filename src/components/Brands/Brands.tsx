@@ -14,15 +14,26 @@ interface Brand {
 }
 
 const brandsList: Brand[] = [
-  { name: "SAMSUNG" },
-  { name: "HYUNDAI" },
-  { name: "LG" },
-  { name: "SK" },
-  { name: "LOTTE" },
-  { name: "KIA" },
-  { name: "NAVER" },
-  { name: "KAKAO" },
-  // Add more Korean brands as needed
+  { name: "FILA" },
+  { name: "MIND BRIDGE" },
+  { name: "NATIONAL GEOGRAPHIC" },
+  { name: "BLUR" },
+  { name: "FIND KAPOOR" },
+  { name: "NUMBERING" },
+  { name: "VUNQUE" },
+  { name: "MARHENJ" },
+  { name: "TRIMARCH" },
+  { name: "PREMIUM OUTLETS" },
+  { name: "ALVAGUE" },
+  { name: "PAPER BAG" },
+  { name: "DR ORIEL" },
+  { name: "GRAYMELIN" },
+  { name: "ELENSILIA" },
+  { name: "COREANA" },
+  { name: "NEWA" },
+  { name: "PLATS" },
+  { name: "MMLG" },
+  { name: "CANDYLAB" },
 ];
 
 export const Brands = () => {
