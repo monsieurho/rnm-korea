@@ -1,0 +1,83 @@
+.contactSection {
+  background-color: var(--text-primary);
+  color: var(--background);
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 500;
+  margin-bottom: 4rem;
+  line-height: 1;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 8rem;
+}
+
+.contactInfo {
+  border-top: 1px solid var(--background);
+  padding-top: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contactLink {
+  font-size: 2rem;
+  color: var(--background);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.contactLink:hover {
+  opacity: 0.8;
+}
+
+.location {
+  font-size: 1.25rem;
+}
+
+.creditsInfo {
+  border-top: 1px solid var(--background);
+  padding-top: 2rem;
+}
+
+.creditRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.creditLabel {
+  font-size: 1.25rem;
+  opacity: 0.8;
+}
+
+.creditValue {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .contentGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+
+  .mainTitle {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+  }
+}

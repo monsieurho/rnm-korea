@@ -1,0 +1,130 @@
+.aboutSection {
+  background: var(--background);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.textContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  border-left: 1px solid #000;
+  padding-left: 2rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.aboutText {
+  font-size: clamp(2.5rem, 3.5vw, 4.5rem);
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #333 0%, #666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  color: #666;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: #eee;
+}
+
+.timelineItem {
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s ease-out;
+}
+
+.timelineItem.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timelineYear {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timelineContent {
+  width: 45%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 55%;
+}
+
+.timelineItem:nth-child(even) .timelineContent {
+  margin-left: 0;
+  margin-right: 55%;
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 1rem;
+  }
+
+  .textContainer {
+    padding-left: 1rem;
+  }
+
+  .aboutText {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: revealChar 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes revealChar {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid var(--text-primary);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.scrollContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 300px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+}
+
+.talentImage {
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  width: 100%;
+  height: 100%;
+}

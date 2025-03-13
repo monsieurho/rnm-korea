@@ -1,0 +1,91 @@
+.hero {
+  min-height: 100svh;
+  background: var(--background);
+  color: var(--text-primary);
+  position: relative;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 50%;
+  border-right: 1px solid #000;
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #000;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.titleBlock {
+  max-width: 90%;
+}
+
+.mainTitle {
+  font-size: clamp(4rem, 15vw, 12rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+.subTitle {
+  font-size: clamp(2rem, 8vw, 6rem);
+  font-weight: 400;
+  margin-top: 2rem;
+  line-height: 1.1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.modernistList {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+  .content {
+    width: 100%;
+  }
+}
