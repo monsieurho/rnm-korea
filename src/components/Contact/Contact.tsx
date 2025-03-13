@@ -15,8 +15,11 @@ export const Contact = () => {
 
         <div className={styles.contentGrid}>
           <div className={styles.contactInfo}>
-            <a href="mailto:contact@rnm.kr" className={styles.contactLink}>
-              contact@rnm.kr
+            <a
+              href="mailto:RNM_manager@naver.com"
+              className={styles.contactLink}
+            >
+              RNM_manager@naver.com
             </a>
             <p className={styles.location}>Seoul, South Korea</p>
           </div>
@@ -31,7 +34,15 @@ export const Contact = () => {
             <div className={styles.creditRow}>
               <span className={styles.creditLabel}>Social</span>
               <span className={styles.creditValue}>Facebook</span>
-              <span className={styles.creditValue}>Instagram</span>
+              {/* Updated Instagram link to point to the external Instagram profile */}
+              <a
+                href="https://www.instagram.com/rnm_jmanager/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.creditValue}
+              >
+                Instagram
+              </a>
             </div>
           </div>
         </div>
