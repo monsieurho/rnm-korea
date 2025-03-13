@@ -20,7 +20,7 @@ const brandsList: Brand[] = [
   { name: "BLUR" },
   { name: "FIND KAPOOR" },
   { name: "ABIJOU" },
-  { name: "SAMJINPHARM" },
+  { name: "SAMJIN" },
   { name: "NUTRIONE" },
   { name: "MACMOC" },
   { name: "NUMBERING" },
