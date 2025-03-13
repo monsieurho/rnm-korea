@@ -10,7 +10,7 @@
 .scrollContainer {
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
+  overflow: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
   height: 300px;
